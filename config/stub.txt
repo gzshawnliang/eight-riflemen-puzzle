@@ -1,0 +1,3 @@
+STATEMENT
+Out put the position of the remaining 8 - N riflemen.
+

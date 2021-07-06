@@ -1,0 +1,23 @@
+<div class="statement-body">
+<div class="statement-section statement-goal">
+   <h2><span class="icon icon-goal">&nbsp;</span><span>Goal </span></h2>
+   <span class="question-statement">Dans ce jeu, vous contrôlez une mère poisson qui tente de retrouver ses oeufs. Elle est tellement inquiète qu'elle ne s'arrête pas d'avancer, mais vous pouvez l'aider en choisissant si elle doit aller vers le haut (<const>UP</const>), vers le bas (<const>DOWN</const>) ou rester sur la même ligne (<const>STILL</const>).
+    <br><br>
+    Le jeu se déroule sur une grille de <strong>15</strong> cellules de large et <strong>6</strong> cellules de haut. La cellule en haut à gauche est de coordonnée (0, 0). &Agrave; chaque tour, le poisson se déplace d'une case vers la <strong>droite</strong>. Pour réussir votre mission, vous devez mener le poisson à ses oeufs.</span>
+</div>
+<div class="statement-section statement-protocol">
+   <div class="blk">
+      <div class="title">Entrées d'initialisation</div>
+      <div class="question-statement-input">2 entiers <var>eggX</var> et <var>eggY</var> correspondant à la position du groupe d'oeufs.</div>
+      <div class="title">Entrée pour un tour de jeu</div>
+      <div class="question-statement-input">2 entiers <var>fishX</var> et <var>fishY</var> correspondant à la position du poisson.</div>
+   </div>
+   <div class="blk">
+      <div class="title">Sortie pour un tour de jeu</div>
+      <div class="question-statement-output">Une action parmi :<br>- <const>UP</const>: Le poisson monte d'une cellule.<br>- <const>DOWN</const>: Le poisson descend d'une cellule.<br>- <const>STILL</const>: Ne change pas la hauteur du poisson.</div>
+   </div>
+   <div class="blk">
+      <div class="title">Contraintes</div>
+      <div class="question-statement-constraints">0 &lt; <var>eggX</var> &lt; 15<br>0 &lt; <var>eggY</var> &lt; 6<br>0 &lt; <var>fishX</var> &lt; 15<br>0 &lt; <var>fishY</var> &lt; 6</div>
+   </div>
+</div></div>

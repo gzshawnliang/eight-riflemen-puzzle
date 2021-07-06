@@ -1,0 +1,94 @@
+<div class="statement-body">
+   <div class="statement-section statement-goal">
+      <h2><span class="icon icon-goal">&nbsp;</span><span>Goal </span></h2>
+      <span class="question-statement">
+This is a variant of an eight-queens problem. But in this problem, you have pre-existing N riflemen (queens) and you should maximize the total distance from each rifleman to the lower-left corner. Out put the position of the remaining 8 - N riflemen.
+      </span>
+   </div>
+   <div class="statement-section statement-rules">
+      <h2><span class="icon icon-rules">&nbsp;</span><span>Rules </span></h2>
+      <span class="question-statement">
+    <p>
+ The challenge is to place eight riflemen (queens) on the board such that no riflemen are attacking any of the others, and you should maximize the total distance from each rifleman to the lower-left corner.</p>
+    <p>For those not familiar with chess pieces, the queen can attack every square on the same row, on the same column, and on either of the diagonals.       
+    </p>
+      </span>
+   </div>   
+   <div class="statement-section statement-protocol">
+      <div class="blk">
+         <div class="title">Initialization input</div>
+         <div class="question-statement-input">
+            <p> &lt;&lt;Line 1>> An integer <var>N</var> for the number of riflemen who have arrived first.</p>
+            <p>&lt;&lt;Next <b>N</b> lines:>> A string <var>S</var> for the coordinates of each rifleman.</p>
+         </div>
+         <div class="title">Input for a game round</div>
+         <div class="question-statement-input">
+            none
+         </div>
+      </div>
+      <div class="blk">
+         <div class="title">Output</div>
+         <div class="question-statement-output">
+            &lt;&lt;8 - <b>N</b> lines >> The coordinates of the remaining riflemen. One coordinates string for a single line.
+         </div>
+         <div class="blk">
+            <div class="title">Constraints</div>
+            <div class="question-statement-constraints">
+               <p>0 &lt;= <var>N</var> &lt;= 7 </p>
+               <p>
+               coordinates string <var>S</var> <br>
+               'A' &lt;= the <b>first</b> character of <var>S</var> &lt;= 'H' <br>
+               1  &lt;= the <b>second</b> character of <var>S</var> &lt;= 8
+               </p>               
+            </div>
+         </div>
+         <div class="blk">
+            <div class="title">STORY</div>
+            <div class="question-statement-constraints"><p>In the land of PLZNERFR-301, people live by a natural-formed basin. They dug trenches, which happen to form an 8x8 grid, and planted crops on the land. Suddenly, on February 30th, a UFO (code NERFR-99) crashed into the lower-left corner of the basin and had weird liquid leaking out. To stop further pollution, the president decided to send riflemen to the location and blow up the UFO.</p>
+               <p>N riflemen had already arrived, but they discovered that they don’t have enough firepower to destroy the UFO. After 10 seconds of meticulous calculation, the riflemen find out they need at least 8 men.</p>
+               <p>Being afraid of ruining the existing crops, each rifleman used 4 strings (spreading out in the following 8 directions) to levitate himself. Each string was connecting the rifleman with the border of the basin.</p>
+               <img src="https://i.postimg.cc/8Pm0ZYcy/statement-1-720.png" style="width:100%;height:auto">
+               <br><p>It’s physically impossible to have two strings being collinear, and the strength of one string cannot withstand the weight of two riflemen. So, the commander should avoid putting the new rifleman if the new rifleman is in the way of an existing string.</p>
+               <img src="https://i.postimg.cc/52PkVFwL/statement-2-720.png" style="width:100%;height:auto"><p>
+                  (If a rifleman is in the spot ‘R’, you cannot place another rifleman in the ‘X’s)</p>
+               <p>
+                  Speaking of the commander, the commander is currently busy handling the RECOILCONTROLOFR-99 project, so it is your job to arrange the riflemen and save the people of PLZNERFR-301. The control panel uses a special coordinate system. The x-coordinates are expressed with ‘A’ to ‘H’, and the y-coordinates are expressed with numbers from 1 to 8 (A1 is the lower-left corner, where the UFO is).</p>
+               <img src="https://i.postimg.cc/QdNnwqWj/statement-3-720.png" style="width:100%;height:auto">
+               <p>Just before you send command to the first rifleman, you found this paper in the commander’s desk.</p>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td style="border:1px solid ;padding: 6px;">
+                  <p>CASE: MZBQHERE (weird liquid)</p>
+                  <p>*Radiational*</p>
+                  <p>Date: 02/30/2333</p>
+                  <p>Present: Dr. Wraith Main, Dr. Frost Mat3K</p></td></tr><tr><td style="border:1px solid;padding: 6px;">
+                  <p>[1]The□□□ induce the□□□symptom of volunteer NO.39.</p>
+                  <p>[2]□□□Far□□□Save Value (SV)□□□□□□life□□□□□□hope□□□suviving.</p>
+                  <p>[3]□Y□□□□□□□□□□□□□□□□□</p>
+                  <p>[4]□□E□□□□□□□□□□□□□□□□</p>
+                  <p>[5]□□□E□□□□□□□□□□□□□□□</p>
+                  <p>[6]□□□□T□□□□□□□□□□□□□□</p>
+                  <p>[7]Gas mask□□□□□□□□□□□□□□□□□□□□SV□□□.</p>
+                  <p>[*] About SV:</p>
+                  <p style="margin:6px"><img src="https://i.postimg.cc/1zf755HT/statement-4-720.png" style="width:100%;height:auto"></p>
+                  <p>Distance = Safe Value</p><p>UFO pos = SV 0</p>
+                  <p>End</p>
+               </td>
+               </tr>
+               </tbody>
+               </table>
+               <p>
+                  Being affected by MZBQHERE, the N riflemen who arrived earlier refused to move.</p><p>
+                  *You have a strange feeling that if you make the riflemen standing too close to the UFO, something horrible will happen.</p>
+
+               <p>
+                  *You need to increase the total SV of all 8 riflemen.</p>
+               <p>
+                  Filling the board with 8 riflemen and having the highest total SVs possible, output the coordinate of the remaining 8 - N riflemen (using the special coordinate system). The inputs guarantee that there is always a satisfying answer.
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

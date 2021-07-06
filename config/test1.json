@@ -1,0 +1,9 @@
+{
+	"title": {
+		"1": "Test 1",
+		"2": "Test 1"
+	},
+	"testIn": "A5\nE2\nG6",
+	"isTest": "true",
+	"isValidator": "true"
+}
