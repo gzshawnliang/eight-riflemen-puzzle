@@ -13,9 +13,9 @@ For those not familiar with chess pieces, the queen can attack every square on t
 ## Initialization input
 
 
-<<Line 1>> An integer `N` for the number of riflemen who have arrived first.
+`<<Line 1>>` An integer `N` for the number of riflemen who have arrived first.
 
-<<Next N lines:>> A string `S` for the coordinates of each rifleman.
+`<<Next N lines:>>` A string `S` for the coordinates of each rifleman.
 
 
 ## Input for a game round
@@ -23,7 +23,7 @@ none
 
 ## Output
 
-<<8 - `N` lines >> The coordinates of the remaining riflemen. One coordinates string for a single line.
+`<<8 - N lines >>` The coordinates of the remaining riflemen. One coordinates string for a single line.
 
 ## Constraints
 
@@ -31,7 +31,8 @@ none
 
 `0 <= N <= 7`
 
-coordinates string S
+coordinates string `S`
+
 `'A' <=` the **first** character of `S <= 'H'`
 
 `1 <=` the **second** character of `S <= 8`
