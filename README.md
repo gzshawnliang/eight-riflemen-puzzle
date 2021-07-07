@@ -17,11 +17,8 @@ For those not familiar with chess pieces, the queen can attack every square on t
 
 ## Initialization input
 
-
-`<<Line 1>>` An integer `N` for the number of riflemen who have arrived first.
-
+`<<Line 1>>` An integer `N` for the number of riflemen who have arrived first.<br/>
 `<<Next N lines:>>` A string `S` for the coordinates of each rifleman.
-
 
 ## Input for a game round
 none
