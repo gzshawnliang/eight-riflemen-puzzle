@@ -32,8 +32,8 @@ none
 `0 <= N <= 7`
 
 coordinates string `S`<br/>
-`'A' <=` the **first** character of `S <= 'H'`<br/>
-`1 <=` the **second** character of `S <= 8`
+`'A' <=` the **first** character of `S` `<= 'H'`<br/>
+`1 <=` the **second** character of `S` `<= 8`
 
 ## STORY
 In the land of PLZNERFR-301, people live by a natural-formed basin. They dug trenches, which happen to form an 8x8 grid, and planted crops on the land. Suddenly, on February 30th, a UFO (code NERFR-99) crashed into the lower-left corner of the basin and had weird liquid leaking out. To stop further pollution, the president decided to send riflemen to the location and blow up the UFO.
