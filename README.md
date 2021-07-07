@@ -1,6 +1,11 @@
-This project is a contribution for CodinGame, a variant of an eight-queens puzzle of a Solo game using the Game Engine Toolkit of CodinGame.
+This project is a contribution for CodinGame, a variant of an eight-queens puzzle of a Solo game using the [Game Engine Toolkit](https://www.codingame.com/playgrounds/25775/codingame-sdk-documentation/introduction) of [CodinGame](https://www.codingame.com/).
 
+This puzzle can be solved using the following concepts:Recursion, Backtracking, Permutations, Brute-force.Practice using these concepts and improve game player programming skills.
+
+#Demo
 ![](src/main/resources/view/assets/demo.gif)
+
+#Game intro
 
 ## Goal
 This is a variant of an eight-queens problem. But in this problem, you have pre-existing N riflemen (queens) and you should maximize the total distance from each rifleman to the lower-left corner. Out put the position of the remaining 8 - N riflemen.
