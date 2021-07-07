@@ -31,10 +31,8 @@ none
 
 `0 <= N <= 7`
 
-coordinates string `S`
-
-`'A' <=` the **first** character of `S <= 'H'`
-
+coordinates string `S`<br/>
+`'A' <=` the **first** character of `S <= 'H'`<br/>
 `1 <=` the **second** character of `S <= 8`
 
 ## STORY
