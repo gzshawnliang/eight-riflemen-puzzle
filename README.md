@@ -55,12 +55,9 @@ It’s physically impossible to have two strings being collinear, and the streng
 Speaking of the commander, the commander is currently busy handling the RECOILCONTROLOFR-99 project, so it is your job to arrange the riflemen and save the people of PLZNERFR-301. The control panel uses a special coordinate system. The x-coordinates are expressed with ‘A’ to ‘H’, and the y-coordinates are expressed with numbers from 1 to 8 (A1 is the lower-left corner, where the UFO is).
 ![](src/main/resources/view/assets/statement-3-720.png)
 
-Just before you send command to the first rifleman, you found this paper in the commander’s desk.
+Just now you received a report about the weird liquid, now having a name of MZBQHERE. The safe Value(SV) of a rifleman is equal to the distance between the rifleman and the UFO (each cell has a side length of 1 unit). You had a strange feeling that if you make the riflemen standing too close to the UFO, something horrible will happen.
 
-
-|CASE: MZBQHERE (weird liquid)<br />*Radiational*<br/>Date: 02/30/2333<br />Present: Dr. Wraith Main, Dr. Frost Mat3K     | 
-|----  | 
-|[1]The□□□ induce the□□□symptom of volunteer NO.39.<br/>[2]□□□Far□□□Save Value (SV)□□□□□□life□□□□□□hope□□□suviving.<br/>[3]□Y□□□□□□□□□□□□□□□□□<br/>[4]□□E□□□□□□□□□□□□□□□□<br/>[5]□□□E□□□□□□□□□□□□□□□<br/>[6]□□□□T□□□□□□□□□□□□□□<br/>[7]Gas mask□□□□□□□□□□□□□□□□□□□□SV□□□.<br/>[*] About SV:<br/>![](src/main/resources/view/assets/statement-4-720.png) <br/> Distance = Safe Value <br/> UFO pos = SV 0<br/> End  | 
+![](src/main/resources/view/assets/statement-5.png)
 
 Being affected by MZBQHERE, the N riflemen who arrived earlier refused to move.
 

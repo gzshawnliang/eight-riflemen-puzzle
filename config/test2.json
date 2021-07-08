@@ -1,7 +1,7 @@
 {
 	"title": {
-		"1": "six rifleman",
-		"2": "six rifleman"
+		"1": "six rifleman has arrived",
+		"2": "six rifleman has arrived"
 	},
 	"testIn": "A6\nB3\nD8\nE4\nF2\nH5",
 	"isTest": "true",
