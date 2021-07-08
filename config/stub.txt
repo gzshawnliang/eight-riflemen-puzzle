@@ -1,3 +1,10 @@
+read N:int
+loop N read S:word(2)
+
+
+INPUT
+N: The number of riflemen who have arrived first.
+S: The coordinates of each rifleman.
+
 STATEMENT
 Out put the position of the remaining 8 - N riflemen.
-

@@ -1,9 +1,9 @@
 {
 	"title": {
-		"1": "Test 1",
-		"2": "Test 1"
+		"1": "seven rifleman",
+		"2": "seven rifleman"
 	},
-	"testIn": "A5\nE2\nG6",
+	"testIn": "A5\nB3\nC1\nD7\nE2\nF8\nG6",
 	"isTest": "true",
-	"isValidator": "true"
+	"isValidator": "false"
 }

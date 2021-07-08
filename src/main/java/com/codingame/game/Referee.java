@@ -140,10 +140,6 @@ public class Referee extends AbstractReferee
                     ;
         }
 
-
-
-//        createQueen("F3");
-
         pointText = graphicEntityModule.createText("score:  "+String.format("%.4f", points))
                 .setStrokeThickness(2) // Adding an outline
                 .setStrokeColor(0xffffff) // a white outline
@@ -212,9 +208,6 @@ public class Referee extends AbstractReferee
             return;
         }
 
-        //        char a=(char)('A'+(turn));
-        //        queenPos="";
-        //        queenPos= String.valueOf(a) + (8-turn);
         createQueen(queenPos);
 
         if (turn == 8 - iniSize )

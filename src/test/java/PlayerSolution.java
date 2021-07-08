@@ -11,13 +11,13 @@ public class PlayerSolution
     {
         InputStream in= System.in;
         PrintStream out= System.out;
-        //new SolutionOk().Solve(in,out);
-        new SolutionBad2().Solve(in,out);
-        //new SolutionBad().Solve(in,out);
+        new SolutionCorrect().Solve(in,out);
+        //new SolutionWrong2().Solve(in,out);
+        //new SolutionWrong1().Solve(in,out);
     }
 }
 
-class SolutionBad2
+class SolutionWrong2
 {
     public void Solve(InputStream in,PrintStream out)
     {
@@ -41,7 +41,7 @@ class SolutionBad2
     }
 }
 
-class SolutionBad
+class SolutionWrong1
 {
     public void Solve(InputStream in,PrintStream out)
     {
@@ -73,7 +73,7 @@ class SolutionBad
 }
 
 
-class SolutionOk
+class SolutionCorrect
 {
     private int indAllP = 0;
     private int [][] allP = new int[92][8];
@@ -120,13 +120,6 @@ class SolutionOk
 
     public void Solve(InputStream in,PrintStream out)
     {
-        /*
-        3
-        A1
-        D8
-        F4
-         */
-
         Scanner scanner = new Scanner(in);
         int n = scanner.nextInt();
         String[] iniPos = new String[n];

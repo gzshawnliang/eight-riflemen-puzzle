@@ -18,7 +18,6 @@ public class Constants {
     public static final String QUEEN_SPRITE1 = "riflemen-1.png";
     public static final String QUEEN_SPRITE = "riflemen-2.png";
     public static final String QUEEN_SPRITE3 = "riflemen-3.png";
-    //public static final String[] QUEEN_SPRITE4 = {"riflemen-1.png","riflemen-2.png"};
 
     public static final String QUEEN_SPRITE_BAD = "riflemen-2.png";
     public static final String QUEEN_ERROR = "error.png";
