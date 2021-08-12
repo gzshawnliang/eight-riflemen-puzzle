@@ -1,23 +1,69 @@
 <div class="statement-body">
-<div class="statement-section statement-goal">
-   <h2><span class="icon icon-goal">&nbsp;</span><span>Goal </span></h2>
-   <span class="question-statement">Dans ce jeu, vous contrôlez une mère poisson qui tente de retrouver ses oeufs. Elle est tellement inquiète qu'elle ne s'arrête pas d'avancer, mais vous pouvez l'aider en choisissant si elle doit aller vers le haut (<const>UP</const>), vers le bas (<const>DOWN</const>) ou rester sur la même ligne (<const>STILL</const>).
-    <br><br>
-    Le jeu se déroule sur une grille de <strong>15</strong> cellules de large et <strong>6</strong> cellules de haut. La cellule en haut à gauche est de coordonnée (0, 0). &Agrave; chaque tour, le poisson se déplace d'une case vers la <strong>droite</strong>. Pour réussir votre mission, vous devez mener le poisson à ses oeufs.</span>
+   <div class="statement-section statement-goal">
+      <h2><span class="icon icon-goal">&nbsp;</span><span>Goal </span></h2>
+      <span class="question-statement">
+This is a variant of an eight-queens problem. But in this problem, you have pre-existing N riflemen (queens) and you should maximize the total distance from each rifleman to the lower-left corner. Output the position of the remaining 8 - N riflemen.
+      </span>
+   </div>
+   <div class="statement-section statement-rules">
+      <h2><span class="icon icon-rules">&nbsp;</span><span>Rules </span></h2>
+      <span class="question-statement">
+    <p>
+ The challenge is to place eight riflemen (queens) on the board such that no riflemen are attacking any of the others, and you should maximize the total distance from each rifleman to the lower-left corner.</p>
+    <p>For those not familiar with chess pieces, the queen can attack every square on the same row, on the same column, and on either of the diagonals.       
+    </p>
+      </span>
+   </div>   
+   <div class="statement-section statement-protocol">
+      <div class="blk">
+         <div class="title">Initialization input</div>
+         <div class="question-statement-input">
+            <p> &lt;&lt;Line 1>> An integer <var>N</var> for the number of riflemen who have arrived first.</p>
+            <p>&lt;&lt;Next <b>N</b> lines:>> A string <var>S</var> for the coordinates of each rifleman.</p>
+         </div>
+         <div class="title">Input for a game round</div>
+         <div class="question-statement-input">
+            none
+         </div>
+      </div>
+      <div class="blk">
+         <div class="title">Output</div>
+         <div class="question-statement-output">
+            &lt;&lt;8 - <b>N</b> lines >> The coordinates of the remaining riflemen (in any order). One coordinate string for a single line.
+         </div>
+         <div class="blk">
+            <div class="title">Constraints</div>
+            <div class="question-statement-constraints">
+               <p>0 &lt;= <var>N</var> &lt;= 7 </p>
+               <p>
+               coordinates string <var>S</var> <br>
+               'A' &lt;= the <b>first</b> character of <var>S</var> &lt;= 'H' <br>
+               1  &lt;= the <b>second</b> character of <var>S</var> &lt;= 8
+               </p>               
+            </div>
+         </div>
+         <div class="blk">
+            <div class="title">STORY</div>
+            <div class="question-statement-constraints"><p>In the land of PLZNERFR-301, people live by a natural-formed basin. They dug trenches, which happen to form an 8x8 grid, and planted crops on the land. Suddenly, on February 30th, a UFO (code NERFR-99) crashed into the lower-left corner of the basin and had weird liquid leaking out. To stop further pollution, the president decided to send riflemen to the location and blow up the UFO.</p>
+               <p>N riflemen had already arrived, but they discovered that they don’t have enough firepower to destroy the UFO. After 10 seconds of meticulous calculation, the riflemen find out they need at least 8 men.</p>
+               <p>Being afraid of ruining the existing crops, each rifleman used 4 strings (spreading out in the following 8 directions) to levitate himself. Each string was connecting the rifleman with the border of the basin.</p>
+               <img src="https://cdn-games.codingame.com/community/4085102-1625365039442/05dd1af93fcff22b8e89f47a81777d22f91439d5d9b0917b1b8f9ea11ae8890e.png" style="width:100%;height:auto">
+               <br><p>It’s physically impossible to have two strings being collinear, and the strength of one string cannot withstand the weight of two riflemen. So, the commander should avoid putting the new rifleman if the new rifleman is in the way of an existing string.</p>
+               <img src="https://cdn-games.codingame.com/community/4085102-1625365039442/e5726a23c2a55093e005b1288124bf45cfc9d4e5950c356c77883976f9030dd4.png" style="width:100%;height:auto"><p>
+                  (If a rifleman is in the spot ‘R’, you cannot place another rifleman in the ‘X’s)</p>
+               <p>
+                  Speaking of the commander, the commander is currently busy handling the RECOILCONTROLOFR-99 project, so it is your job to arrange the riflemen and save the people of PLZNERFR-301.</p>
+                  <p> The control panel uses a special coordinate system. The x-coordinates are expressed with ‘A’ to ‘H’, and the y-coordinates are expressed with numbers from 1 to 8 (A1 is the lower-left corner, where the UFO is).</p>
+               <img src="https://cdn-games.codingame.com/community/4085102-1625365039442/5a17a93336d7c2b1547d0a753e0f94d40d5baf067d8874ce0a268806d0228653.png" style="width:100%;height:auto">
+               <p>Just now you received a report about the weird liquid, now having a name of MZBQHERE. The safe Value(SV) of a rifleman is equal to the distance between the rifleman and the UFO (each cell has a side length of 1 unit). You had a strange feeling that if you make the riflemen standing too close to the UFO, something horrible will happen.</p>
+               <img src="https://cdn-games.codingame.com/community/4085102-1625365039442/a20991102763eeb176ca5618694373d21761e97c316aa41251bc4ec623989d6a.png" style="width:100%;height:auto">
+
+               <p>
+                  Being affected by MZBQHERE, the N riflemen who arrived earlier refused to move.</p>
+                  Filling the board with 8 riflemen and having the highest total SVs possible, output the coordinate of the remaining 8 - N riflemen using the special coordinate system in any order. The inputs guarantee that there is always a satisfying answer.
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
 </div>
-<div class="statement-section statement-protocol">
-   <div class="blk">
-      <div class="title">Entrées d'initialisation</div>
-      <div class="question-statement-input">2 entiers <var>eggX</var> et <var>eggY</var> correspondant à la position du groupe d'oeufs.</div>
-      <div class="title">Entrée pour un tour de jeu</div>
-      <div class="question-statement-input">2 entiers <var>fishX</var> et <var>fishY</var> correspondant à la position du poisson.</div>
-   </div>
-   <div class="blk">
-      <div class="title">Sortie pour un tour de jeu</div>
-      <div class="question-statement-output">Une action parmi :<br>- <const>UP</const>: Le poisson monte d'une cellule.<br>- <const>DOWN</const>: Le poisson descend d'une cellule.<br>- <const>STILL</const>: Ne change pas la hauteur du poisson.</div>
-   </div>
-   <div class="blk">
-      <div class="title">Contraintes</div>
-      <div class="question-statement-constraints">0 &lt; <var>eggX</var> &lt; 15<br>0 &lt; <var>eggY</var> &lt; 6<br>0 &lt; <var>fishX</var> &lt; 15<br>0 &lt; <var>fishY</var> &lt; 6</div>
-   </div>
-</div></div>
