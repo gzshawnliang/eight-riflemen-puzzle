@@ -1,9 +1,9 @@
 {
 	"title": {
-		"1": "two riflemen has arrived",
-		"2": "two riflemen has arrived"
+		"1": "two riflemen have arrived",
+		"2": "two riflemen have arrived"
 	},
 	"testIn": "F2\nD5",
-	"isTest": "true",
-	"isValidator": "false"
+	"isTest": "false",
+	"isValidator": "true"
 }

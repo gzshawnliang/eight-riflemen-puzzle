@@ -12,8 +12,29 @@ public class PlayerSolution
         InputStream in= System.in;
         PrintStream out= System.out;
         new SolutionCorrect().Solve(in,out);
-        //new SolutionWrong2().Solve(in,out);
+        //new SolutionWrong3().Solve(in,out);
         //new SolutionWrong1().Solve(in,out);
+    }
+}
+
+class SolutionWrong3
+{
+    public void Solve(InputStream in,PrintStream out)
+    {
+        Scanner scanner = new Scanner(in);
+        int queenCount = scanner.nextInt();
+        List<String> iniPos2=new ArrayList<>();
+        for (int i = 0; i <= queenCount - 1; ++i)
+        {
+            String s = scanner.next();
+            iniPos2.add(s);
+        }
+
+        out.println("H3");
+        out.println("F8");
+        out.println("C1");
+        out.println("B7");
+        out.println("D4");
     }
 }
 

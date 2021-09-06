@@ -4,6 +4,6 @@
 		"2": "nobody has arrived"
 	},
 	"testIn": " ",
-	"isTest": "true",
-	"isValidator": "false"
+	"isTest": "false",
+	"isValidator": "true"
 }

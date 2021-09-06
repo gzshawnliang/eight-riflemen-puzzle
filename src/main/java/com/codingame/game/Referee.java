@@ -212,7 +212,7 @@ public class Referee extends AbstractReferee
 
         if (turn == 8 - iniSize )
         {
-            if(points <maxPoints)
+            if(points + 0.0001d < maxPoints)
             {
                 loseGame(queenPos,"Highest Possible Score:" + String.format("%.4f", maxPoints) + "" );
             }

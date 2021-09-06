@@ -1,9 +1,9 @@
 {
 	"title": {
-		"1": "four rifleman has arrived",
-		"2": "four rifleman has arrived"
+		"1": "four riflemen have arrived",
+		"2": "four riflemen have arrived"
 	},
 	"testIn": "A5\nC8\nD4\nH6",
-	"isTest": "true",
-	"isValidator": "false"
+	"isTest": "false",
+	"isValidator": "true"
 }
