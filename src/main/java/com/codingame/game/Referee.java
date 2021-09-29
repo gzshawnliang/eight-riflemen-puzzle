@@ -244,7 +244,7 @@ public class Referee extends AbstractReferee
     private void createLine(String pos)
     {
         final int ULX = 480, ULY = 60 - 7, GL = 120;
-        double WD = 2;
+        double WD = 5;
 
         int GridX = (pos.charAt(0) - 'A');
         int GridY = (pos.charAt(1) - '1');
